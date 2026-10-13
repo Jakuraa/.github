@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#141310"/>
+      <stop offset="100%" stop-color="#0A0A08"/>
+    </linearGradient>
+    <linearGradient id="glyph-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#EBE8E3"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="512" height="512" rx="96" fill="url(#bg-grad)"/>
+  <rect width="512" height="512" rx="96" fill="none" stroke="#262522" stroke-width="2"/>
+
+  <!-- Subtle Architectural Grid Accent -->
+  <g opacity="0.12" stroke="#E7E5E4" stroke-width="1" stroke-dasharray="4 6">
+    <line x1="128" y1="64" x2="128" y2="448"/>
+    <line x1="256" y1="64" x2="256" y2="448"/>
+    <line x1="384" y1="64" x2="384" y2="448"/>
+    <line x1="64" y1="128" x2="448" y2="128"/>
+    <line x1="64" y1="256" x2="448" y2="256"/>
+    <line x1="64" y1="384" x2="448" y2="384"/>
+  </g>
+
+  <!-- Core Geometric "J" / Infrastructure Gateway Monogram (Seamless Single Vector) -->
+  <path d="M 190 132
+           H 354
+           C 360.6 132 366 137.4 366 144
+           V 324
+           C 366 368 334 398 286 398
+           H 226
+           C 178 398 146 368 146 324
+           V 290
+           C 146 284.5 150.5 280 156 280
+           H 182
+           C 187.5 280 192 284.5 192 290
+           V 324
+           C 192 344 206 356 226 356
+           H 286
+           C 306 356 320 344 320 324
+           V 174
+           H 190
+           C 183.4 174 178 168.6 178 162
+           V 144
+           C 178 137.4 183.4 132 190 132
+           Z"
+        fill="url(#glyph-grad)"/>
+
+  <!-- Deterministic Verification Node (Emerald Beacon) -->
+  <circle cx="190" cy="153" r="8" fill="#10B981"/>
+  <circle cx="190" cy="153" r="14" fill="none" stroke="#10B981" stroke-width="1.5" opacity="0.5"/>
+</svg>

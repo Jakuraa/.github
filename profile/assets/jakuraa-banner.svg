@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="1200" height="360">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#141310"/>
+      <stop offset="100%" stop-color="#0A0A08"/>
+    </linearGradient>
+    <linearGradient id="line-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10B981" stop-opacity="0.8"/>
+      <stop offset="50%" stop-color="#E7E5E4" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#E7E5E4" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="glyph-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#EBE8E3"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="360" rx="16" fill="url(#bg)"/>
+  <rect width="1200" height="360" rx="16" fill="none" stroke="#262522" stroke-width="1.5"/>
+
+  <!-- Subtle Blueprint / Architectural Coordinate Grid -->
+  <g opacity="0.08" stroke="#E7E5E4" stroke-width="1">
+    <line x1="80" y1="0" x2="80" y2="360"/>
+    <line x1="360" y1="0" x2="360" y2="360"/>
+    <line x1="720" y1="0" x2="720" y2="360"/>
+    <line x1="1080" y1="0" x2="1080" y2="360"/>
+    <line x1="0" y1="90" x2="1200" y2="90"/>
+    <line x1="0" y1="180" x2="1200" y2="180"/>
+    <line x1="0" y1="270" x2="1200" y2="270"/>
+  </g>
+
+  <!-- Accent Divider Line -->
+  <line x1="80" y1="285" x2="1120" y2="285" stroke="url(#line-grad)" stroke-width="1.5"/>
+
+  <!-- Left: Monogram Mark & Identity -->
+  <g transform="translate(80, 75)">
+    <!-- J Glyph Shield -->
+    <rect width="84" height="84" rx="18" fill="#181714" stroke="#2E2C28" stroke-width="1.5"/>
+    
+    <!-- Seamless Monogram Icon inside Shield -->
+    <g transform="translate(14, 14) scale(0.21)">
+      <path d="M 50 20 H 214 C 220.6 20 226 25.4 226 32 V 212 C 226 256 194 286 146 286 H 86 C 38 286 6 256 6 212 V 178 C 6 172.5 10.5 168 16 168 H 42 C 47.5 168 52 172.5 52 178 V 212 C 52 232 66 244 86 244 H 146 C 166 244 180 232 180 212 V 62 H 50 C 43.4 62 38 56.6 38 50 V 32 C 38 25.4 43.4 20 50 20 Z" fill="url(#glyph-grad)"/>
+      <circle cx="50" cy="41" r="8" fill="#10B981"/>
+    </g>
+
+    <!-- Brand Typography -->
+    <g transform="translate(108, 0)">
+      <!-- Eyebrow Tag -->
+      <text x="0" y="20" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="700" letter-spacing="0.2em" fill="#10B981">
+        JAKURAA COMMERCIAL PVT LTD
+      </text>
+      <!-- Main Wordmark -->
+      <text x="0" y="58" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="38" font-weight="800" letter-spacing="0.16em" fill="#FAF8F5">
+        JAKURAA
+      </text>
+      <!-- Positioning Subtitle -->
+      <text x="0" y="88" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="400" fill="#A8A29E" letter-spacing="0.04em">
+        Infrastructure for AI Agents and Machine Commerce
+      </text>
+    </g>
+  </g>
+
+  <!-- Middle-Right: Three Architectural Pillars -->
+  <g transform="translate(80, 205)">
+    <g transform="translate(0, 0)">
+      <text x="0" y="0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, monospace" font-size="11" font-weight="600" fill="#78716C" letter-spacing="0.1em">01 / ORCHESTRATION</text>
+      <text x="0" y="24" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="15" font-weight="600" fill="#FAF8F5">Agent-First APIs</text>
+      <text x="0" y="44" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="400" fill="#A8A29E">Standardized MCP &amp; HTTP rails</text>
+    </g>
+    <g transform="translate(340, 0)">
+      <text x="0" y="0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, monospace" font-size="11" font-weight="600" fill="#78716C" letter-spacing="0.1em">02 / RISK CONTROLS</text>
+      <text x="0" y="24" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="15" font-weight="600" fill="#FAF8F5">Deterministic Safety</text>
+      <text x="0" y="44" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="400" fill="#A8A29E">Hard gates, collars, signed mandates</text>
+    </g>
+    <g transform="translate(680, 0)">
+      <text x="0" y="0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, monospace" font-size="11" font-weight="600" fill="#78716C" letter-spacing="0.1em">03 / SETTLEMENT</text>
+      <text x="0" y="24" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="15" font-weight="600" fill="#FAF8F5">Auditable Outcomes</text>
+      <text x="0" y="44" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="400" fill="#A8A29E">Cryptographic ledger reconciliation</text>
+    </g>
+  </g>
+
+  <!-- Bottom Bar: Flagship Product & Verified Status -->
+  <g transform="translate(80, 322)">
+    <text x="0" y="0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="500" fill="#78716C">
+      Flagship Product: <tspan fill="#FAF8F5" font-weight="700">SATELINK</tspan> · <tspan fill="#A8A29E">AI Trading Agent Platform</tspan>
+    </text>
+    <text x="1040" y="0" text-anchor="end" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, monospace" font-size="11" font-weight="500" fill="#10B981">
+      ● STABLE INFRASTRUCTURE RAILS
+    </text>
+  </g>
+</svg>
