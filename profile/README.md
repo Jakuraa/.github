@@ -1,88 +1,75 @@
 <div align="center">
 
-<img src="./assets/jakuraa-banner.svg" alt="Jakuraa Banner" width="100%" />
-
 # Jakuraa
 
-**Infrastructure for AI Agents and Machine Commerce**
+**Corporate Technology Company — Established 2019**
 
-*Building the software systems that enable AI agents and machines to interact with services, make decisions, and execute authorized actions.*
+*Building the software systems that enable AI agents and machines to discover, evaluate, access, meter, pay for, and settle digital services programmatically.*
 
-[Corporate Website](https://jakuraa.com) • [Satelink Platform](https://satelink.network) • [Documentation](https://satelink.network) • [Contact](mailto:hello@jakuraa.com)
+[Corporate Website](https://jakuraa.com) • [Satelink Platform](https://satelink.network) • [Documentation](https://docs.satelink.network) • [Contact](mailto:hello@jakuraa.com)
 
 </div>
 
 ---
 
-Jakuraa Commercial Pvt Ltd builds software infrastructure for autonomous AI agents and machines to discover services, negotiate terms, and execute authorized workflows.
+Jakuraa Commercial Private Limited is an Indian technology corporation established in 2019 in Coimbatore, Tamil Nadu. We build software infrastructure for autonomous AI agents and automated systems to discover services, negotiate terms, and execute authorized machine-commerce workflows.
 
-Our engineering focus is reliable agent orchestration, API-first integrations, deterministic risk controls, secure authorization, execution infrastructure, and auditable outcomes.
+Our engineering scope spans AI-agent procurement infrastructure, API metering, programmatic payment rails (x402 on Base and USDT on Polygon), deterministic risk controls, and auditable on-chain settlement.
 
 ---
 
-## Flagship Product: Satelink
+## Flagship Platform: Satelink
 
-### AI Trading Agent for Humans, Agents and Machines
+**[Satelink](https://satelink.network)** is our flagship platform: AI-agent and machine-commerce infrastructure.
 
-**[Satelink](https://satelink.network)** is our flagship product: an AI-driven trading agent platform designed to connect market intelligence, rigorous strategy validation, deterministic risk controls, and authorized execution.
-
-Satelink is engineered for three distinct audiences:
-
-1. **Human Users:** Natural-language trading interfaces and copilot workflows. Traders define capital parameters, asset universes, and risk thresholds, receiving transparent **GO / WAIT / REJECT** decision cards backed by verifiable data evidence, authorizing orders via one-time verification.
-2. **External AI Agents:** Standardized REST APIs and Model Context Protocol ([MCP](https://modelcontextprotocol.io)) servers that allow autonomous agent systems to discover market contexts, evaluate scenarios, and propose structured actions within tightly budgeted scopes.
-3. **Machines and Trading Bots:** Programmatic interfaces that enforce uniform risk controls, kill switches, and structured mandate compliance before execution.
+Satelink's primary objective is agent procurement — helping software agents, automated systems, and developer teams discover, evaluate, authorize, access, meter, pay for, and settle supported digital services programmatically.
 
 ```
-AI Proposal → Strategy DSL → Deterministic Engine → Scorecard (GO / WAIT / REJECT)
-    → Hard Risk Gates → User-Signed Mandate → OMS → Broker Connector → Reconciliation
+Discover → Evaluate → Authorize → Access → Meter → Pay → Settle
 ```
 
-### Capability Matrix & Maturity Status
+### Supported Platform Capabilities
 
-| Subsystem / Capability | Intended Audience | Implementation Status | Maturity Level |
-|:---|:---|:---|:---|
-| **Natural-Language Web Copilot** | Human traders | Implemented | Controlled Beta (Paper Trading) |
-| **Strategy DSL & Deterministic Scorer** | Humans, Agents | Implemented | Active Sandbox Validation |
-| **Deterministic Risk Engine (20 Checks & Kill Switches)** | System-wide | Implemented | Production Baseline in Code |
-| **User Mandate Verification (One-Time Signature)** | Humans, Machines | Implemented | Active in Beta Workflows |
-| **Broker Connectors (Binance, Upstox, Alpaca)** | System-wide | Implemented | Sandbox / Testnet Copilot Only |
-| **Model Context Protocol (MCP) Server** | External AI Agents | Implemented (`apps/mcp-server`) | Local & Developer Evaluation |
-| **Live Autonomous Execution** | Humans, Agents, Bots | Locked behind code gates | Planned (Gated Beta) |
-| **x402 Pay-Per-Call Rail (USDC on Base)** | Machines, Agents | Implemented (`x402-kit`) | Live Mainnet Protocol |
-| **USDT Credit Vault (`RevenueVaultV2` on Polygon)** | Machines, Agents | Deployed on-chain | Live Mainnet Contract |
+1. **Machine Commerce & Service Discovery:** Public machine-readable service discovery catalogue at `/.well-known/satelink.json` and HTTP 402 payment specifications.
+2. **Polygon PoS RPC Gateway:** High-performance, metered JSON-RPC capability at a flat $0.00003 per call.
+3. **x402 Machine Payments:** HTTP-native, keyless pay-per-call micropayments in USDC on Base (`eip155:8453`).
+4. **Prepaid Credit Metering:** Permissionless USDT deposits on Polygon PoS to verified on-chain vault contracts.
+5. **Trading Intelligence API:** Metered analytical statistics (funding rates, open interest, liquidation clusters) returned per call.
 
-> **Current Operational Status:**  
-> Satelink Trading AI is currently in **controlled paper-trading beta**. Autonomous live execution and real-money order routing are locked in code behind hard real-money gates (`LIVE_TRADING`, `AUTONOMOUS_MODE`). Broker connectors are built for sandbox/testnet use; Satelink is not endorsed by or affiliated with any broker.
+### Platform Application: Satelink Trading AI (Paper Beta)
+
+Satelink Trading AI is a specific application built on the Satelink platform.
+
+- **Status:** Controlled paper-trading beta. Live execution is not available.
+- **Safety Boundary:** AI proposes, deterministic risk engines and signed mandates decide. Capital remains at external regulated brokers; withdrawals are never enabled in code.
+
+> **Operational Status:**  
+> - **Platform & Payment Rails:** Live in production on Polygon PoS (137) and Base (8453).  
+> - **Trading AI:** Controlled paper-trading beta; live execution is not yet available.  
+> - **Node Operator Program:** Paused. Operator payouts are not active.
 
 ---
 
 ## Engineering Principles
 
-Our architecture is guided by explicit safety invariants and verifiable engineering practices:
-
 - **Agent-First and API-First Architecture:** Every capability is exposed through well-documented, deterministic APIs and open protocols like MCP and HTTP 402, enabling direct machine consumption without friction.
-- **AI Proposes, Deterministic Systems Decide:** Language models reason, contextualize, and propose. They never hold direct order placement execution tools, never manage broker credentials, and cannot modify risk thresholds or billing logic.
-- **Mandatory Human Authorization:** High-impact execution requires explicit, authenticated user mandates. Financial actions must comply with user-signed limits.
-- **Zero Custody & Restricted Permissions:** User capital resides entirely with external regulated brokers. Satelink never holds customer deposits, and autonomous withdrawal capabilities are strictly disabled in code.
-- **No Guaranteed-Profit Claims:** All trading intelligence outputs are stochastic and subject to strict risk warnings. We make zero claims regarding financial returns, market outperformance, or algorithmic certainty.
-- **Auditable & Reconcilable Execution:** Every decision trace—from initial agent proposal through scorecard weights, risk verification, and broker execution—is logged under an immutable identifier for forensic auditing and memory replay.
-- **Open Standards & Interoperability:** We build upon and contribute to public standards including the Model Context Protocol (MCP) and x402 HTTP micropayment specifications.
-- **Evidence-Based Maturity:** We accurately disclose the operating state of our systems. We do not claim live production readiness or enterprise adoption until verified by public telemetry.
+- **AI Proposes, Deterministic Systems Decide:** Language models reason and contextualize. They never hold direct order placement execution tools, never manage credentials, and cannot modify risk thresholds or billing logic.
+- **Mandatory Authorization:** High-impact execution requires explicit, authenticated user mandates.
+- **Zero Custody:** User capital resides entirely with external regulated brokers or user wallets. Satelink never holds customer deposits, and autonomous withdrawal capabilities are disabled in code.
+- **No Unverified Claims:** All documentation, metrics, and capabilities reflect ground truth. We make zero financial return or outperformance claims.
+- **Auditable & Reconcilable Settlement:** Every settled transaction reconciles on-chain with cryptographic certainty.
+- **Open Standards:** We build upon and contribute to public standards including HTTP 402 specifications and the Model Context Protocol (MCP).
 
 ---
 
 ## Open Source & Core Repositories
 
-Jakuraa engineers public open-source libraries and protocols powering agent workflows and machine monetization:
-
-### Core Platforms & Infrastructure
-
-- **[`Satelink_Network`](https://github.com/Satelink-Protocol/Satelink_Network)**  
-  The core monorepo for Satelink Trading AI: non-custodial trading orchestration, deterministic risk validation, MCP tools, and web interface.
-- **[`x402-kit`](https://github.com/Satelink-Protocol/x402-kit)**  
-  Standalone, MIT-licensed Express middleware for HTTP 402 micro-payments. Enables any Node.js service to charge USDC per API call on Base via the Coinbase CDP facilitator with on-chain settlement.
-- **[`contracts`](https://github.com/Satelink-Protocol/contracts)**  
-  Solidity smart contracts for on-chain usage-settlement and credit vaults on Polygon PoS.
+- **[`Jakuraa/Satelink_Network`](https://github.com/Jakuraa/Satelink_Network)**  
+  The core monorepo for the Satelink platform: machine-commerce infrastructure, Polygon RPC gateway, metering, web application, and Trading AI copilot.
+- **[`Jakuraa/x402-kit`](https://github.com/Jakuraa/x402-kit)**  
+  Standalone, MIT-licensed Express middleware for HTTP 402 micropayments in USDC on Base.
+- **[`Jakuraa/contracts`](https://github.com/Jakuraa/contracts)**  
+  Solidity smart contracts for on-chain usage settlement and credit vaults on Polygon PoS.
 
 ### Verifiable On-Chain Contracts
 
@@ -98,7 +85,7 @@ Jakuraa engineers public open-source libraries and protocols powering agent work
 
 Jakuraa Commercial Private Limited is an Indian corporation registered under the Companies Act, 2013.
 
-- **Corporate Identity Number (CIN):** `U52190TZ2019PTC033093`
+- **Corporate Identity Number (CIN):** `U51909TZ2019PTC031777`
 - **Incorporation Date:** 4 December 2019
 - **Registered Jurisdiction:** Coimbatore, Tamil Nadu, India
 - **GSTIN:** `33AADCF9341B1Z1`
@@ -111,13 +98,13 @@ Jakuraa Commercial Private Limited is an Indian corporation registered under the
 
 - **Corporate Website:** [https://jakuraa.com](https://jakuraa.com)
 - **Satelink Platform:** [https://satelink.network](https://satelink.network)
+- **Documentation:** [https://docs.satelink.network](https://docs.satelink.network)
 - **Public Infrastructure RPC:** `https://rpc.satelink.network`
 - **General Inquiries:** [hello@jakuraa.com](mailto:hello@jakuraa.com)
-- **Press & Institutional Media:** [press@jakuraa.com](mailto:press@jakuraa.com)
 - **Product Inquiries:** [press@satelink.network](mailto:press@satelink.network)
 
 ---
 
 <div align="center">
-  <sub>© 2019–2026 Jakuraa Commercial Private Limited. All rights reserved. Satelink is a product of Jakuraa Commercial Pvt Ltd.</sub>
+  <sub>© 2019–2026 Jakuraa Commercial Private Limited. All rights reserved. Satelink is the flagship platform of Jakuraa Commercial Private Limited.</sub>
 </div>
